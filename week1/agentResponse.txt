@@ -1,0 +1,69 @@
+I have initialized and acknowledged the Task Modeling Framework (TMF) for Calculus Integration. Because you explicitly specified the bounds and requested to see the work, I will walk through the complete analytical process.
+
+Here is the evaluation of the definite integral:
+
+
+$$\int_{1}^{2} \left(3x^3 - \frac{1}{x^2}\right) dx$$
+
+---
+
+### Step 1: Structural Identification and Classification
+
+* **Integrand:** $f(x) = 3x^3 - x^{-2}$ (a combination of polynomial and rational terms).
+* **Type:** Definite integral with a lower bound of $a = 1$ and an upper bound of $b = 2$.
+* **User Preference:** Full walkthrough requested.
+
+### Step 2: Substitution and Simplification
+
+No complex inner functions or $u$-substitution are required for this problem. The integrand can be integrated directly by rewriting the fraction with a negative exponent:
+
+
+$$3x^3 - \frac{1}{x^2} = 3x^3 - x^{-2}$$
+
+### Step 3: Algebraic Transformation & Technique Selection
+
+We will use the linearity property of integration to split the terms and apply the standard Power Rule for integration, $\int x^n dx = \frac{x^{n+1}}{n+1}$.
+
+### Step 4: Analytical Evaluation (Applying Integration Rules)
+
+Find the antiderivative $F(x)$ by integrating each term individually:
+
+
+$$\int 3x^3 \, dx = 3 \cdot \frac{x^4}{4} = \frac{3}{4}x^4$$
+
+$$\int -x^{-2} \, dx = -\left(\frac{x^{-1}}{-1}\right) = \frac{1}{x}$$
+
+Combining these gives the general antiderivative:
+
+
+$$F(x) = \frac{3}{4}x^4 + \frac{1}{x}$$
+
+### Step 5: Boundary Evaluation & Finalization
+
+Now, we apply the Fundamental Theorem of Calculus, evaluating $F(x)$ from $1$ to $2$:
+
+
+$$\left[ \frac{3}{4}x^4 + \frac{1}{x} \right]_{1}^{2} = F(2) - F(1)$$
+
+* **Evaluate at the upper bound ($x = 2$):**
+
+$$F(2) = \frac{3}{4}(2)^4 + \frac{1}{2} = \frac{3}{4}(16) + \frac{1}{2} = 12 + \frac{1}{2} = \frac{25}{2}$$
+
+
+* **Evaluate at the lower bound ($x = 1$):**
+
+$$F(1) = \frac{3}{4}(1)^4 + \frac{1}{1} = \frac{3}{4} + 1 = \frac{7}{4}$$
+
+
+* **Subtract $F(2) - F(1)$:**
+
+$$\frac{25}{2} - \frac{7}{4} = \frac{50}{4} - \frac{7}{4} = \frac{43}{4}$$
+
+
+
+---
+
+**Final Solution:**
+
+
+$$\frac{43}{4} \quad (\text{or } 10.75)$$
